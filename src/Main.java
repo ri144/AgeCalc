@@ -28,8 +28,9 @@ public class Main {
 				}
 			}
 			ages[i] = age;
-			System.out.println("Would you like to enter details for another client?");
-			if(s.next().equals("N")){
+			System.out.println("Would you like to enter details for another client? ('Y','N')");
+			String check = s.next();
+			if(check.equals("N") || check.equals("n")){
 				System.out.println("Thanks for using the age calculator!");
 				break;
 			}
